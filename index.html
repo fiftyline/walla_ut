@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>A/B Redirect</title>
+  <script>
+    // Maze 테스트 링크 2개 넣기
+    const urls = [
+      "https://maze.co/your-test-A",
+      "https://maze.co/your-test-B"
+    ];
+
+    // 랜덤 선택
+    const randomUrl = urls[Math.floor(Math.random() * urls.length)];
+
+    // 자동 이동
+    window.location.href = randomUrl;
+  </script>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
